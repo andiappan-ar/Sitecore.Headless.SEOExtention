@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {C9D548A6-9A94-4AC1-B53C-6CBB428C6A39}
+database: master
+path: /sitecore/templates/User Defined/Headless Extension/Sitemap/PrioritySource/3
+parent: {79B2AE5A-16F2-4551-8532-0616D39B5657}
+name: 3
+master: {00000000-0000-0000-0000-000000000000}
+template: {5330376E-DC6E-4BB1-BB30-A58C3E920ABA}
+templatekey: changefreq
+
+----version----
+language: en
+version: 1
+revision: 16e6f444-1864-4ff7-b77f-a9fe651e200f
+
+----field----
+field: {52F684EC-CE4D-44B1-AA43-2444D2D86644}
+name: key
+key: key
+content-length: 3
+
+0.3
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20220117T171216Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+16e6f444-1864-4ff7-b77f-a9fe651e200f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20220120T190640Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

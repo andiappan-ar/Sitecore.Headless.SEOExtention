@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Headless.SEO.Extention", "Sitecore.Headless.SEO.Extention\Sitecore.Headless.SEO.Extention.csproj", "{9392D106-6F43-4E55-B914-0185ACB77BAD}"
 EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Headless.SEO.Extention.Serialization", "Serialization\Sitecore.Headless.SEO.Extention.Serialization\Sitecore.Headless.SEO.Extention.Serialization.scproj", "{5311D354-6E64-412F-8BDE-7570FA7C92BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,12 @@ Global
 		{9392D106-6F43-4E55-B914-0185ACB77BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9392D106-6F43-4E55-B914-0185ACB77BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9392D106-6F43-4E55-B914-0185ACB77BAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5311D354-6E64-412F-8BDE-7570FA7C92BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5311D354-6E64-412F-8BDE-7570FA7C92BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5311D354-6E64-412F-8BDE-7570FA7C92BB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5311D354-6E64-412F-8BDE-7570FA7C92BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5311D354-6E64-412F-8BDE-7570FA7C92BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5311D354-6E64-412F-8BDE-7570FA7C92BB}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

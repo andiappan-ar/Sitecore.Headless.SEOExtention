@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {69ED73EB-3DC4-49F0-99E3-722280CBEF34}
+database: master
+path: /sitecore/templates/User Defined/Headless Extension/Sitemap/ChangeFrequencySource/daily
+parent: {FC5E9EC7-1446-4F13-85B8-D5976FF3BF9B}
+name: daily
+master: {00000000-0000-0000-0000-000000000000}
+template: {5330376E-DC6E-4BB1-BB30-A58C3E920ABA}
+templatekey: changefreq
+
+----version----
+language: en
+version: 1
+revision: 1b58ed88-06f2-4a0b-a76c-cdc7015cf077
+
+----field----
+field: {52F684EC-CE4D-44B1-AA43-2444D2D86644}
+name: key
+key: key
+content-length: 5
+
+daily
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20220117T171240Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1b58ed88-06f2-4a0b-a76c-cdc7015cf077
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20220117T171240Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
