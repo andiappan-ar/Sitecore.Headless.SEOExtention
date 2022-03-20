@@ -133,6 +133,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\HeadlessSitemapController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -152,12 +153,13 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Web.sitemap" />
-    <Content Include="App_Config\Modules\Sitecore.JSS.SEOExtension\Sitecore.JSS.SEOExtension.config" />
+    <Content Include="App_Config\Modules\Sitecore.Headless.SEOExtension\Sitecore.Headless.SEOExtension.config" />
     <None Include="Web.sitemap.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="App_Start\" />
+    <Folder Include="Views\HeadlessSitemap\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

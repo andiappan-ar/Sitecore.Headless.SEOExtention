@@ -1,21 +1,37 @@
 ﻿using Sitecore.Collections;
 using Sitecore.Data.Items;
 using Sitecore.Data.Managers;
-using Sitecore.JSS.SEOExtension.Helper;
-using Sitecore.JSS.SEOExtention.Models;
+using Sitecore.Headless.SEO.Extention.Helper;
+using Sitecore.Headless.SEO.Extention.Models;
+using Sitecore.Pipelines;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Http;
+using System.Web.Routing;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace Sitecore.JSS.SEOExtension.Sitemap
+namespace Sitecore.Headless.SEO.Extention.Sitemap
 {
     public class SitemapProcessor
     {
-        public void OnItemSaved(object sender, EventArgs args)
+        public void Process(PipelineArgs args)
+        {
+            Configure(RouteTable.Routes);
+        }
+
+        protected void Configure(RouteCollection routes)
+        {
+            routes.MapHttpRoute("sitemapstring", "/api/sitecore/HeadlessSEO/getsitemap", new
+            {
+                controller = "HeadlessSEO",
+                action = "getsitemap"
+            });
+        }
+        public string GetSitemapString(string siteRootPath)
         {
             // Sitemap list
             List<Url> sitemapList = new List<Url>();
@@ -23,7 +39,7 @@ namespace Sitecore.JSS.SEOExtension.Sitemap
             Action<Item> _GetCurrentItem = null;
 
             // Get site root item 
-            Item siteRoot = Sitecore.Context.ContentDatabase.GetItem("{3009CDDD-A5E2-5B02-869B-366FC84F9E64}");
+            Item siteRoot = Sitecore.Context.Database.GetItem(siteRootPath);
 
             _GetChildItem = x =>
             {
@@ -31,7 +47,9 @@ namespace Sitecore.JSS.SEOExtension.Sitemap
                 Parallel.ForEach(x, y =>
                 {
                     // Get only sitemap items
-                    if (TemplateManager.GetTemplate(y).InheritsFrom(CustomConstant.SitemapTemplateId) && SitecoreHelper.IsHideFromSitemap(y))
+                    if (
+                    TemplateManager.GetTemplate(y).InheritsFrom(CustomConstant.SitemapTemplateId) &&
+                    SitecoreHelper.IsHideFromSitemap(y))
                     {
                         _GetCurrentItem(y);
                     }
@@ -79,7 +97,7 @@ namespace Sitecore.JSS.SEOExtension.Sitemap
                 }
             }
 
-            File.WriteAllText("/sitemap.xml", xml);
+            return xml;
         }
     }
 }
