@@ -2,7 +2,8 @@
 This is smaller SEO utility project and its used to support SEO features like Sitemap.xml,Robot.txt.
 
 ## Sitemap
-Generate a sitemap.xml using this platform project.  We can consume sitemap xml by passing start path of an Root item.
+Generate a sitemap.xml using this platform ASP.NET project.  We can consume sitemap xml by passing start path of an Root item.
+This can be used in ASP.NET SDK , JSS projects.
 
 #### Setup template and content items
 Serialization project is made up of TDS project. Inherit below template in the your page templates.
