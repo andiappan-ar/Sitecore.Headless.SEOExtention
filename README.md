@@ -18,7 +18,7 @@ Below SEO fields. Please customize as your wish. Similar chnages needs to update
 #### Setup artifact
 This project should be deployed in HEAD(Sitecore XP). This project refernced sitecore.kernel 10.1.0. Please change the repective Sitecore kernel version according your requirement.
 * Deploy the DLL(Sitecore.Headless.SEO.Extention)
-* Deploy the app_config(\App_Config\Modules\Sitecore.Headless.SEOExtension\Sitecore.Headless.SEOExtension.config)
+
 
 #### Usage
 Post deployment you can generate sitemap xml like below
