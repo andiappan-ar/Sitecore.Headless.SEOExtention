@@ -1,5 +1,5 @@
 <h1 align="center">Sitecore.Headless.SEOExtention</h1>
-This is smaller SEO utility project and its used to support SEO features like Sitemap.xml,Robot.txt.
+This is smaller SEO utility project and its used to support SEO features like Sitemap.xml,Robot.txt in headless website.
 
 ## Sitemap
 Generate a sitemap.xml using this platform ASP.NET project.  We can consume sitemap xml by passing start path of an Root item.
