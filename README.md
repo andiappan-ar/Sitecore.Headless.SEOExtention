@@ -13,6 +13,8 @@ You can choose any of the two options as mentioned below,
 
 * Use sitecore raw package for template installation.
 
+**Serialization path**: https://github.com/andiappan-ar/Sitecore.Headless.SEOExtention/tree/master/Src/Serialization
+
 ## Setup content items
 Below SEO fields. Please customize as your wish. Similar changes needs to update in respective models mentioned in extention project.
 ![image](https://user-images.githubusercontent.com/11770345/159174359-8b1de1ee-65f3-4bf4-8d06-921cd4afce6e.png)
